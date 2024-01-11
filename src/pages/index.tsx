@@ -26,7 +26,7 @@ const Content: React.FC = () => {
 
   const createTopic = api.topic.create.useMutation({
     onSuccess: () => {
-      refetchTopics();
+      void refetchTopics();
     }
   });
 
